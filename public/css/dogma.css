@@ -1,0 +1,740 @@
+body{
+  background-color: #faf7f4;
+}
+/* для шапки */
+.span_toggler_nav {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.nav_dogma {
+    background-color: #faf7f4 !important;
+    /* height: 150px !important; */
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.nav_h1 {
+    color: #a6a4a3 !important;
+    text-transform: uppercase;
+}
+.logo_img{
+  margin-left: 100px; 
+  margin-right:100px;
+}
+.form_hat {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    height: 42px;
+}
+.input_hat {
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.input_hat:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #f9f0da;
+}
+.button_hat {
+    background: #683b4d;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.button_hat:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #f9f0da;
+}
+.search {
+  width: 15px;
+  margin-top: 12px;
+  margin-left: 2px;
+}
+.cont_nav{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* block 1 */
+
+.div_1{
+  margin-top: 145px;
+}
+.div_bl1 {
+    width: 50%;
+    height: 500px;
+    opacity: 0.54;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+.h1_1 {
+    opacity: 0.94;
+    font-size: 78.3px;
+    line-height: 109px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    color: #000;
+    width: 50%;
+    margin: 0 auto;
+}
+.div_bl1_2 {
+    background-color: #cec5aa;
+    width: 30%;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+}
+.line_div{
+  height: 35%;
+  width: 5px;
+  margin-top: 400px;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(145,78,19,1) 35%, rgb(157, 117, 32) 100%);
+}
+.div_bl1_img {
+    width: 70%;
+}
+.img_bl1 {
+    height: 500px !important;
+}
+.p_1 {
+    font-family: "Houschka Pro";
+    font-size: 20px;
+    color: #232323;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* block 2 */
+
+.line_div_bl2{
+  height: 5px;
+  width: 30%;
+  background: linear-gradient(180deg, rgba(145,78,19,1) 35%, rgb(157, 117, 32) 100%);
+  position: absolute;
+  right: 0px;
+  bottom: 200px;
+}
+.div_img_bl2_p{
+  position: relative;
+  width: 70%;
+}
+.img_bl2 {
+    width: 450px;
+    height: 626px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.div_bl2 {
+    margin-left: 100px;
+}
+.h1_2 {
+    font-size: 61px;
+    line-height: 52px;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    color: #1a1a1d;
+    width: 75%;
+    margin: 30px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.numb_h2 {
+    font-family: "DIN Pro";
+    font-size: 75px;
+    line-height: 75px;
+    font-weight: 400;
+    letter-spacing: -0.045em;
+    color: #6e5336;
+}
+
+/* block 3 */
+
+.div_bl3_cor {
+    width: 75%; /* Ширина двух изображений (454px каждое) */
+    justify-content: space-between; /* Равномерное распределение между изображениями */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img_bl3 {
+    width: 454px; /* Ширина изображений */
+    height: auto; /* Автоматическая высота */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.div_img_bl3 {
+    position: relative;
+}
+.p_bl3_1 {
+    position: absolute;
+    bottom: 40px;
+    right: 36%;
+    font-family: "Myriad Pro";
+    font-size: 28px;
+    line-height: 111px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+.p_bl3_2 {
+    position: absolute;
+    bottom: 20px;
+    right: 46%;
+    font-family: 'Myriad Pro';
+    font-size: 13px;
+    line-height: 53px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #c6c4c4;
+}
+/* block 4 */
+
+.backg {
+    background: url("../image/back.jpg");
+    width: 100%;
+    height: 700px;
+}
+
+.h1_4 {
+    font-family: "Houschka Pro";
+    font-size: 45px;
+    line-height: 59px;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    color: #1a1a1d;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.h1_4_2 {
+    font-family: "Houschka Pro";
+    font-size: 22.6px;
+    line-height: 31px;
+    font-weight: 500;
+    color: #191613;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+.h1_bl4 {
+    border: 1px solid #e5e3e2;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #e5e3e2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1_4_3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin: 0;
+    text-align: center;
+}
+.line_bl4 {
+    width: 40%;
+    background-color: black;
+    height: 2px;
+    margin: 20px auto;
+}
+
+/* block 5 */
+
+
+.line_intr{
+  width: 15%;
+  background-color: black;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.img_5 {
+    height: 400px; 
+    margin-left:100px;
+}
+.div_text_bl5 {
+    background-color: rgba(255, 255, 255, 0.6); /* Прозрачный белый фон */
+    padding: 20px; /* Поля вокруг текста */
+    margin-left: -50px;
+    height: 300px;
+    margin-top: 20px;
+}
+.text_bl5{
+  margin-left: 50px;
+}
+.bl5_con{
+  position: relative !important;
+  display: inline !important;
+}
+.div_cont{
+  text-align: end;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* block 6 */
+.img_bl6{
+  position: relative;
+}
+.line_img_bl6{
+  width: 40%;
+  background: linear-gradient(90deg, rgba(145,78,19,1) 35%, rgba(198,143,22,1) 100%);
+  height: 5px;
+  position: absolute;
+  right: 0px;
+}
+.img_col_2{
+  width: 200px; 
+  height: 300px;
+}
+.div_bl6{
+width: 90%;
+margin: 0 auto;
+}
+/* block 7 */
+
+.h1_7 {
+    font-size: 18.6px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #282828;
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.line_bl7 {
+    width: 30%;
+    background-color: black;
+    height: 2px;
+    margin-top: 20px;
+}
+.img_bl7 {
+    height: 450px;
+}
+.div_bl7 {
+    width: 100%;
+}
+.line_footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #a6a4a3;
+    height: 3px;
+    margin-top: 20px;
+}
+.foot {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.f1 {
+    color: #605d5c;;
+    margin-top: 5px;
+}
+.backg2 {
+    height: 100% !important;
+}
+.div_fot_h1{
+  width: 60%;
+  margin: 0 auto;
+}
+.img_bl7_fot{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.line {
+    width: 15%;
+    background-color: black;
+    height: 2px;
+    margin-top: 50px;
+}
+.fot_img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.fon_ton{
+  background-color: #ceaa642b;
+}
+.fon_ton_2{
+  background-color: #ceaa642b;
+  height: 700px;
+}
+
+/* from */
+
+.btn_send{
+  margin: 0 auto;
+}
+
+
+/* carousel */
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-indicators{
+  justify-content: start;
+  width: 30%;
+}
+.carousel-indicators li {
+background-color: #a6a4a3; /* Цвет фона точек */
+width: 15px; /* Ширина точек */
+height: 15px; /* Высота точек */
+border-radius: 50%; /* Создаем круглые точки */
+margin: 0 5px; /* Отступы между точками */
+cursor: pointer; /* Изменяем курсор при наведении на точку */
+}
+
+.carousel-indicators .active {
+background-color: #a6a4a300;
+border: 1px solid #a6a4a3; /* Цвет активной точки */
+}
+
+
+/* adaption */
+.dnone2{
+  display: none;
+}
+
+@media (min-width: 350px) and (max-width:1000px) {
+
+  
+  .logo_img{
+    display: none;
+  }
+  .logo_img2{
+    width: 40%;
+    margin: 10px auto;
+  }
+  .search{
+    display: none;
+  }
+  .nav_dogma{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  /* block 1 */
+
+  .div_1{
+    margin-top: 65px;
+  }
+  .div_bl1_2{
+    display: none;
+  }
+  .div_bl12{
+    position: absolute;
+    z-index: 2;
+    background-color: #f5deb36b;
+    height: 400px;
+  }
+  .div_bl1_img{
+    width: 100%;
+  }
+  .div_bl1{
+    width: 100%;
+    height: 400px;
+  }
+  .img_bl1 {
+    height: 400px !important;
+  }
+.h1_1 {
+    opacity: 0.94;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.p_1 {
+    font-size: 18px;
+    margin: 30px auto;
+}
+.p_1 b{
+  color: black;
+
+}
+.p_2{
+  color: black;
+}
+
+/* block 2 */
+.h1_2 {
+  font-size: 43px;
+  line-height: 43px;
+  font-weight: 200;
+  letter-spacing: -0.01em;
+  width: 75%;
+  margin: 30px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.block02 .d-flex{
+  display: block !important;
+}
+.line_div_bl2{
+  display: none;
+}
+.div_bl2 {
+  margin-left: 40px;
+}
+.img_bl2 {
+  width: 300px;
+  height: 426px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.numb_h2 {
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 300;
+}
+.desc_bl2{
+  font-size: 14px;
+}
+
+/* block 3 */
+
+.div_bl3_cor {
+  display: block !important;
+}
+
+.img_bl3 {
+  width: 260px; /* Ширина изображений */
+}
+
+.div_img_bl3 {
+  position: relative;
+}
+.p_bl3_1 {
+  right: 27%;
+}
+.p_bl3_2 {
+  right: 41%;
+}
+/* block 4 */
+
+.dnone{
+  display: none;
+}
+
+.line_intr_2{
+  width: 35%;
+  background-color: black;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+.backg_2 {
+  background: url("../image/back.jpg");
+  width: 100%;
+  height:1000px
+}
+.fon_ton_2{
+  height: 1000px;
+}
+.img_bl5_div{
+  text-align: center;
+}
+.img_5_2{
+  width: 80%
+}
+.div_text_bl5_2{
+  width: 80%; 
+  margin: 0 auto;
+}
+
+
+.h1_4 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 200;
+  width: 90%;
+  margin-top: 70px;
+}
+.h1_4_2 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 60%;
+}
+.h1_bl4 {
+  width: 80px;
+  height: 80px;
+}
+
+.h1_4_3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.line_bl4 {
+  width: 40%;
+  background-color: black;
+  height: 2px;
+  margin: 20px auto;
+}
+
+
+/* block 6 */
+
+.img_bl6{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.div_col_prof h1{
+  text-align: center;
+}
+.div_col_prof p{
+  text-align: center;
+}
+.img_col_2{
+width: 200px; 
+height: 270px;
+}
+
+/* block 7 */
+
+.backg2block{
+  display: block !important;
+}
+.img_bl7 {
+  width: 80%;
+  height: 300px;
+  margin-top: 10px;
+  
+}
+.img_cen{
+  text-align: center;
+}
+.line_bl7 {
+  width: 60%;
+}
+.h1_7 {
+  font-size: 18.6px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #282828;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+.div_bl7 {
+  width: 100%;
+}
+.line_footer {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #a6a4a3;
+  height: 3px;
+  margin-top: 20px;
+}
+.foot {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+
+
+
+.div_fot_h1{
+width: 60%;
+margin: 0 auto;
+}
+.img_bl7_fot{
+width: 20px;
+height: 20px;
+margin-right: 5px;
+}
+.line {
+  width: 35%;
+  background-color: black;
+  height: 2px;
+  margin-top: 50px;
+}
+.fot_img{
+width: 15px;
+height: 15px;
+margin-right: 5px;
+}
+
+/* from */
+
+.btn_send{
+margin: 0 auto;
+}
+
+
+/* carousel */
+
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-indicators{
+justify-content: center;
+  margin-top: 30px;
+  position: relative;
+}
+.carousel-indicators li {
+background-color: #a6a4a3; /* Цвет фона точек */
+width: 15px; /* Ширина точек */
+height: 15px; /* Высота точек */
+border-radius: 50%; /* Создаем круглые точки */
+margin: 0 5px; /* Отступы между точками */
+cursor: pointer; /* Изменяем курсор при наведении на точку */
+}
+
+.carousel-indicators .active {
+background-color: #a6a4a300;
+border: 1px solid #a6a4a3; /* Цвет активной точки */
+}
+
+.dnone2{
+  display: block;
+}
+
+}
