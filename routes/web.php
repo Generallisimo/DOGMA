@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
@@ -69,3 +70,9 @@ Route::get('/products/create', [ProductController::class, 'create'])->name('prod
 
 // Маршрут для обработки данных формы и создания нового продукта
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+
+
+
+Route::get('/img', [ImageController::class, 'index'])->name('admin.img');
+Route::get('/img/{product}/create', [ImageController::class, 'create'])->name('admin.create.image');
+Route::post('/img/{product}', [ImageController::class, 'store'])->name('admin.create.image.gallery');
