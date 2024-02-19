@@ -18,6 +18,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
+
+    <!-- шрифты -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Houschka+Pro:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
 </head>
 
 <body>
@@ -75,10 +80,9 @@
                     <li class="nav-item">
                         <a class="nav-link nav_h1" href="#6">контакты</a>
                     </li>
-                    <li>
-                        <!-- Иконка для открытия модального окна -->
+                    <!-- <li>
                         <img class="search" src="{{asset ('image/search.png')}}" alt="" data-toggle="modal" data-target="#searchModal">
-                    </li>
+                    </li> -->
                 </ul>
 
 
@@ -239,7 +243,28 @@
     <!-- Карусель с изображениями -->
     <div id="carouselExampleControls" class="carousel slide dnone" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            @foreach ($products as $product)
+            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                <div class="d-flex div_bl3_cor">
+                    <div class="div_img_bl3">
+                        <a href="">
+                            <img class="d-block img_bl3" src="{{asset ('image/three1.png')}}" alt="Первое изображение">
+                        </a>
+                    </div>
+                    
+                    <div class="div_img_bl3">
+                        <a href="{{ route('collage', $product->id) }}" class="image-link">
+                            <img class="d-block img_bl3" src="{{ asset('images/' . $product->image) }}" alt="Второе изображение">
+                            <div class="image-overlay"></div>
+                            <p class="p_bl3_1">Остоженка</p>
+                            <p class="p_bl3_2">Смотреть</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            @endforeach
+            <!-- <div class="carousel-item ">
                 <div class="d-flex div_bl3_cor">
                     <div class="div_img_bl3">
                         <a href="/collage">
@@ -254,23 +279,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item ">
-                <div class="d-flex div_bl3_cor">
-                    <div class="div_img_bl3">
-                        <a href="/collage">
-                            <img class="d-block img_bl3" src="{{asset ('image/three1.png')}}" alt="Первое изображение">
-                        </a>
-                    </div>
-                    <div class="div_img_bl3">
-                        <a href="/collage">
-                            <img class="d-block img_bl3" src="{{asset ('image/three2.png')}}" alt="Второе изображение">
-                            <p class="p_bl3_1">Остоженка</p>
-                            <p class="p_bl3_2">Смотреть</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </div> -->
             <!-- Добавьте другие элементы слайдов здесь, если это необходимо -->
         </div>
         <!-- Стрелки для перемотки слайдов -->
@@ -299,15 +308,25 @@
                     </div>
                 </a>
             </div>
+            @foreach ($products as $product)
             <div class="carousel-item">
-                <a href="/collage">
-                    <div class="div_img_bl3">
+
+                    <!-- <div class="div_img_bl3">
                         <img class="d-block img_bl3" src="{{asset ('image/three2.png')}}" alt="Второе изображение">
                         <p class="p_bl3_1">Остоженка</p>
                         <p class="p_bl3_2">Смотреть</p>
-                    </div>
-                </a>
+                    </div> -->
+                    <a href="{{ route('collage', $product->id) }}" class="image-link">
+                    <div class="div_img_bl3">
+                            <img class="d-block img_bl3" src="{{ asset('images/' . $product->image) }}" alt="Второе изображение">
+                            <div class="image-overlay"></div>
+                            <p class="p_bl3_1">Остоженка</p>
+                            <p class="p_bl3_2">Смотреть</p>
+                        </div>
+                    </a>
+
             </div>
+            @endforeach
             <!-- Добавьте другие элементы слайдов здесь, если это необходимо -->
         </div>
         <!-- Стрелки для перемотки слайдов -->
@@ -344,55 +363,130 @@
     <!-- Модальное окно -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content mod_dog">
+            <div class="modal-overlay"></div> <!-- Добавленный элемент -->
+                <div class="modal-header" style="border: none;">
                     <h5 class="modal-title" id="exampleModalLabel">РАСЧЕТ СТОИМОСТИ ПРОЕКТА</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close btn_close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <!-- Здесь можете разместить форму обратной связи или другой контент -->
-                    <!-- <p>Мы рады вашему обращению! Заполните форму ниже и мы свяжемся с вами в ближайшее время.</p> -->
-                    <!-- Пример формы обратной связи -->
                     <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Как Вас зовут?</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="form-group mt-1">
+                            <label for="exampleInputEmail1" class="lab">Как Вас зовут?</label>
+                            <input type="text" class="form-control dcontr" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">В каком городе находится объект?</label>
-                            <input type="email" class="form-control" id="exampleInputPassword1">
+                        <div class="form-group mt-1">
+                            <label for="exampleInputPassword1" class="lab">В каком городе находится объект?</label>
+                            <input type="email" class="form-control dcontr" id="exampleInputPassword1">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Какая площадь объекта?</label>
-                            <input class="form-control" id="exampleFormControlTextarea1" rows="3">
+                        <div class="form-group mt-1">
+                            <label for="exampleFormControlTextarea1" class="lab">Какая площадь объекта?</label>
+                            <input class="form-control dcontr" id="exampleFormControlTextarea1" rows="3">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Тип объекта?</label>
-                            <input class="form-control" id="exampleFormControlTextarea1" rows="3">
+                        <div class="form-group mt-1">
+                            <label for="exampleFormControlTextarea1" class="lab">Тип объекта?</label>
+                            <div class="d-flex mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="objectType" id="houseRadio" value="house">
+                                    <label class="form-check-label" for="houseRadio">Дом</label>
+                                </div>
+                                <div class="form-check" style="margin-left: 10px;">
+                                    <input class="form-check-input" type="radio" name="objectType" id="apartmentRadio" value="apartment">
+                                    <label class="form-check-label" for="apartmentRadio">Квартира</label>
+                                </div>
+                                <div class="form-check" style="margin-left: 10px;">
+                                    <input class="form-check-input" type="radio" name="objectType" id="otherRadio" value="other">
+                                    <label class="form-check-label" for="otherRadio">Другое</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">В каком районе находится объект?</label>
-                            <input class="form-control" id="exampleFormControlTextarea1" rows="3">
+                        <div class="form-group mt-1">
+                            <label for="exampleFormControlTextarea1" class="lab">В каком районе находится объект?</label>
+                            <input class="form-control dcontr" id="exampleFormControlTextarea1" rows="3">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Ваш номер телефона?</label>
-                            <input class="form-control" id="exampleFormControlTextarea1" rows="3">
+                        <div class="form-group mt-1">
+                            <label for="exampleFormControlTextarea1" class="lab">Ваш номер телефона?</label>
+                            <input class="form-control dcontr" id="exampleFormControlTextarea1" rows="3">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Как с вами связаться?</label>
-                            <input class="form-control" id="exampleFormControlTextarea1" rows="3">
+                        <div class="form-group mt-1">
+                            <label for="exampleFormControlTextarea1" class="lab">Как с вами связаться?</label>
+                            <div class="d-flex mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="objectType" id="callRadio" value="house">
+                                    <label class="form-check-label" for="callRadio">Позвонить</label>
+                                </div>
+                                <div class="form-check " style="margin-left: 10px;">
+                                    <input class="form-check-input" type="radio" name="objectType" id="sendRadio" value="apartment">
+                                    <label class="form-check-label" for="sendRadio">Написать</label>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn_send">Отправить</button>
+                        <div class="form-group mt-1">
+                            <label for="exampleFormControlTextarea1" class="lab">Выберите социальную сеть</label>
+                            <div class="d-flex mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="objectType" id="callRadio" value="house">
+                                    <label class="form-check-label" for="callRadio">Telegram</label>
+                                </div>
+                                <div class="form-check" style="margin-left: 10px;">
+                                    <input class="form-check-input" type="radio" name="objectType" id="sendRadio" value="apartment">
+                                    <label class="form-check-label" for="sendRadio">Whatsapp</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div_btn_c">
+                            <button type="submit" class="btn btn-primary btn_send">Отправить</button>
+                        </div>
                     </form>
                 </div>
-                <!-- Можно добавить опциональный футер модального окна -->
             </div>
         </div>
     </div>
 
+<style>
+    .dcontr{
+    
+    border: none; 
+    border-bottom:1px solid black; 
+    border-radius:0%;
+    background: #fff0;
+    }
+    .btn_send{
+        margin: 20px;
+        border-radius: 20px;
+        background-color: white;
+        border: 1px solid #aa571a;
+        color: black;
+        width: 200px;
+    }
+    .div_btn_c{
+        text-align: center;
+        width: 100%;
+    } 
+    .btn_close{
+        border: none;
+        background: #fff0;
+        color: #aa571a;
+        font-size: 25px;
+    }
+    .mod_dog{
 
+    padding: 20px;
+    margin: 0;
+    background-image: url("../image/modal2.png");
+    background-size: cover; /* Растягивает фон на весь экран */
+    background-position: center; /* Центрирует фон */
+    background-repeat: no-repeat; /* Отключает повторение фона */
+    filter: drop-shadow(50%); 
+
+    .lab{
+        font-family: 'Houschka Pro', sans-serif;
+    }
+
+    }
+</style>
     <!-- block 5 -->
     <div class="backg dnone">
         <div class="fon_ton_2">
@@ -456,6 +550,12 @@
     </div>
     
     
+    <script>
+        
+    </script>
+    <style>
+
+    </style>
     
     
     <div class="backg_2 dnone2">
@@ -480,6 +580,7 @@
                                     <p>– сверяем визуализации с рабочими чертежами.</p>
                                     <p>– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

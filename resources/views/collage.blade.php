@@ -90,59 +90,31 @@
 
     <div style="margin-top:145px;">
         <h1 class="h1_2" id="3">галерея<p class="line"></p></h1>
-        <div class="container dnone">
-            <div class="col">
-                <div class="d-flex">
-                    <img class="img_gal" src="{{asset ('image/1.png')}}" alt="" style="width: 50%; margin:10px; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                    <img class="img_gal" src="{{asset ('image/3.png')}}" alt="" style="width: 50%; margin:10px; height:500px; border-bottom:2px solid black; padding-bottom:5px">
+
+        <div class="row dnone drow">
+            @foreach ($products as $product)
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <img class="img_gal" src="{{ asset('images/' . $product->image) }}" alt="" style="width: 100%; margin:10px; height:500px; border-bottom:2px solid black; padding-bottom:5px">
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="img_gal d-flex">
-                    <img class="img_gal" src="{{asset ('image/4.png')}}" alt="" style="width: 50%; margin:10px; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                    <img class="img_gal" src="{{asset ('image/2.png')}}" alt="" style="width: 50%; margin:10px; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                </div>
-            </div>
-            <div class="col">
-                <div class="img_gal d-flex">
-                    <img class="img_gal" src="{{asset ('image/5.png')}}" alt="" style="width: 50%; margin:10px; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                    <img class="img_gal" src="{{asset ('image/6.png')}}" alt="" style="width: 50%; margin:10px; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                </div>
-            </div>
+            @endforeach
         </div>
 
 
         <div class="container dnone2">
+            @foreach ($products as $product)
             <div class="col">
                 <div class="d-flex">
-                    <img class="img_gal" src="{{asset ('image/1.png')}}" alt="" style="width: 80%; margin:10px auto; height:500px; border-bottom:2px solid black; padding-bottom:5px">
+                    <img class="img_gal" src="{{ asset('images/' . $product->image) }}" alt="" style="width: 80%; margin:10px auto; height:500px; border-bottom:2px solid black; padding-bottom:5px">
                 </div>
             </div>
-            <div class="col">
-                <div class="img_gal d-flex">
-                    <img class="img_gal" src="{{asset ('image/4.png')}}" alt="" style="width: 80%; margin:10px auto; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                </div>
-            </div>
-            <div class="col">
-                <div class="img_gal d-flex">
-                    <img class="img_gal" src="{{asset ('image/5.png')}}" alt="" style="width: 80%; margin:10px auto; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                </div>
-            </div>
-            <div class="col">
-                <div class="img_gal d-flex">
-                    <img class="img_gal" src="{{asset ('image/2.png')}}" alt="" style="width: 80%; margin:10px auto; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                </div>
-            </div>
-            <div class="col">
-                <div class="img_gal d-flex">
-                    <img class="img_gal" src="{{asset ('image/3.png')}}" alt="" style="width: 80%; margin:10px auto; height:500px; border-bottom:2px solid black; padding-bottom:5px">
-                </div>
-            </div>
-            <div class="col">
+            @endforeach
+       <!-- <div class="col">
                 <div class="img_gal d-flex">
                     <img class="img_gal" src="{{asset ('image/6.png')}}" alt="" style="width: 80%; margin:10px auto; height:500px; border-bottom:2px solid black; padding-bottom:5px">
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     

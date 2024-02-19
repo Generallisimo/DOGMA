@@ -13,6 +13,16 @@ class ImageController extends Controller
         $products = Product::all();
         return view('admin.img', compact('products'));
     }
+    public function home()
+    {
+        $products = Product::all();
+        return view('index', compact('products'));
+    }
+    public function collage(Product $product)
+    {
+        $products = $product->images; // Предположим, что у продукта есть отношение images
+        return view('collage', compact('product', 'products'));
+    }
 
     public function create(Product $product)
     {

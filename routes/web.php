@@ -20,10 +20,12 @@ use App\Http\Controllers\ProductController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/collage', [PageController::class, 'collage']);
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/', [ImageController::class, 'home'])->name('home_index');
+Route::get('/home/{product}', [ImageController::class, 'collage'])->name('collage');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -67,11 +69,8 @@ Route::group(['middleware' => 'auth'], function () {
 
 // Маршрут для отображения формы создания продукта
 Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
-
 // Маршрут для обработки данных формы и создания нового продукта
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
-
-
 
 Route::get('/img', [ImageController::class, 'index'])->name('admin.img');
 Route::get('/img/{product}/create', [ImageController::class, 'create'])->name('admin.create.image');

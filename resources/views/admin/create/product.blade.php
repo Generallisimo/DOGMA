@@ -1,4 +1,4 @@
-@extends('layouts.app', ['page' => __('Create Product'), 'pageSlug' => 'profile'])
+@extends('layouts.app', ['page' => __('Create Product'), 'pageSlug' => 'product_create'])
 
 @section('content')
 <h1>Create Product</h1>

@@ -22,9 +22,19 @@
 
                 <div class="collapse show" id="laravel-examples">
                     <ul class="nav pl-4">
-                        <li @if ($pageSlug == 'profile') class="active " @endif>
-                            <a href="{{ route('profile.edit')  }}">
-                                <i class="tim-icons icon-single-02"></i>
+                        <li @if ($pageSlug == 'product_create') class="active " @endif>
+                            <a href="{{ route('products.create')  }}">
+                                <i class="tim-icons icon-bag-16"></i>
+                                <p>{{ __('Products') }}</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse show" id="laravel-examples">
+                    <ul class="nav pl-4">
+                        <li @if ($pageSlug == 'product_create') class="active " @endif>
+                            <a href="{{ route('admin.img')  }}">
+                                <i class="tim-icons icon-camera-18"></i>
                                 <p>{{ __('Gallery') }}</p>
                             </a>
                         </li>
