@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'MontserratR'; 
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontserratM'; 
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontserratL'; 
+  src: url('/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HouschkaProB'; 
+  src: url('/fonts/HouschkaPro-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HouschkaProEB'; 
+  src: url('/fonts/HouschkaPro-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HouschkaProL'; 
+  src: url('/fonts/HouschkaPro-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HouschkaProM'; 
+  src: url('/fonts/HouschkaPro-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'DINProB'; 
+  src: url('/fonts/DINPro-Bold-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'DINProL'; 
+  src: url('/fonts/DINPro-Light-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'DINProM'; 
+  src: url('/fonts/DINPro-Medium-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'DINProR'; 
+  src: url('/fonts/DINPro-Regular.otf') format('opentype');
+}
+
 body{
   background-color: #faf7f4;
 }
@@ -12,6 +60,7 @@ body{
     padding-bottom: 2.5rem;
 }
 .nav_h1 {
+    font-family: 'DIN ProL';
     color: #a6a4a3 !important;
     text-transform: uppercase;
 }
@@ -84,16 +133,16 @@ body{
     background-color: white;
 }
 .h1_1 {
-    font-family: 'Montserrat', sans-serif;
-    opacity: 0.94;
-    font-size: 78.3px;
-    line-height: 109px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: -0.005em;
-    color: #000;
-    width: 50%;
-    margin: 0 auto;
+  font-family: 'Montserrat';
+  opacity: 0.94;
+  font-size: 75.3px;
+  line-height: 89px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.005em;
+  color: #000;
+  width: 50%;
+  margin: 0 110px;
 }
 .div_bl1_2 {
     background-color: #cec5aa;
@@ -119,20 +168,31 @@ body{
     font-family: "Houschka Pro";
     font-size: 20px;
     color: #232323;
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
+    margin: 0 110px;
 }
 
 
 /* block 2 */
 
+.span_none{
+  background-image: none !important; /* Удаляем стандартные стрелки */
+  background-size: 50% 75% !important;
+}
+.span_img_r{
+  background-image: url('../image/r.png') !important;
+}
+.span_img_l{
+  background-image: url('../image/l.png') !important;
+}
+
 .line_div_bl2{
-  height: 5px;
+  height: 4px;
   width: 30%;
-  background: linear-gradient(180deg, rgba(145,78,19,1) 35%, rgb(157, 117, 32) 100%);
+  background: #b49168;
   position: absolute;
-  right: 0px;
-  bottom: 200px;
+  right: -35px;
+  bottom: 90px;
 }
 .div_img_bl2_p{
   position: relative;
@@ -142,32 +202,41 @@ body{
     width: 450px;
     height: 626px;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .div_bl2 {
     margin-left: 100px;
 }
+.line_2 {
+  width: 12%;
+  background-color: black;
+  height: 2px;
+  margin-top: 35px;
+}
 .h1_2 {
     font-family: 'Houschka Pro', sans-serif;
-    font-size: 61px;
+    font-size: 45px;
     line-height: 52px;
     font-weight: 100;
     letter-spacing: -0.01em;
     color: #1a1a1d;
     width: 75%;
     margin: 30px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    /* padding-bottom: 20px; */
 }
 .numb_h2 {
     font-family: "DIN Pro";
-    font-size: 75px;
+    font-size: 60px;
     line-height: 75px;
     font-weight: 400;
     letter-spacing: -0.045em;
     color: #6e5336;
 }
 
+.desc_bl2{
+  font-size: 14px;
+}
 /* block 3 */
 
 .div_bl3_cor {
@@ -178,8 +247,8 @@ body{
 }
 
 .img_bl3 {
-    width: 454px; /* Ширина изображений */
-    height: 600px; /* Автоматическая высота */
+    width: 500px; /* Ширина изображений */
+    height: 800px; /* Автоматическая высота */
     text-align: center;
     margin: 0 auto;
 }
@@ -213,12 +282,6 @@ body{
 }
 /* block 4 */
 
-.backg {
-    background: url("../image/back.jpg");
-    width: 100%;
-    height: 700px;
-}
-
 .h1_4 {
     font-family: "Houschka Pro";
     font-size: 45px;
@@ -238,7 +301,7 @@ body{
     font-weight: 500;
     color: #191613;
     text-align: center;
-    width: 35%;
+    width: 22%;
     margin: 0 auto;
 }
 .h1_bl4 {
@@ -254,53 +317,106 @@ body{
 }
 
 .h1_4_3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #1e1e1e;
     margin: 0;
     text-align: center;
 }
 .line_bl4 {
-    width: 40%;
+    width: 23%;
     background-color: black;
     height: 2px;
     margin: 20px auto;
 }
 
+
 /* block 5 */
 
+.span_none2{
+  background-image: none !important; /* Удаляем стандартные стрелки */
+  background-size: 40% 60% !important;
+}
+.span_img_r2{
+  background-image: url('../image/r2.png') !important;
+  width: 3em !important;
+  height: 2em !important;
+}
+.span_img_l2{
+  background-image: url('../image/l2.png') !important;
+  width: 3em !important;
+  height: 2em !important;
+}
+.backg {
+  background: url("../image/back.jpg");
+  width: 100%;
+  height: 670px;
 
+}
+.lineporc{
+    width: 10%;
+    background-color: black;
+    height: 2px;
+    margin-top: 35px;
+}
 .line_intr{
-  width: 15%;
+  width: 25%;
   background-color: black;
   height: 2px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
 .img_5 {
-    height: 400px; 
+    height: 385px; 
     margin-left:100px;
+    width: 390px;
 }
 .div_text_bl5 {
-    background-color: rgba(223, 223, 223, 0.71);
-    padding: 30px; /* Поля вокруг текста */
-    margin-left: -100px;
-    height: 300px;
-    margin-top: 20px;
+  background-color: rgba(223, 223, 223, 0.71);
+  padding: 30px;
+  margin-left: -155px;
+  height: 250px;
+  margin-top: 70px;
+  width: 60%;
+}
+.h1_proc{
+  font-family: 'HouschkaProL';
+}
+.p_proc{
+  font-family: 'HouschkaProL';
+  margin-bottom: 0 !important;
 }
 .text_bl5{
-  margin-left: 100px;
+  margin-left: 200px;
 }
 .bl5_con{
   position: relative !important;
   display: inline !important;
+  margin-top: 50px;
 }
 .div_cont{
   text-align: end;
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px;
+  margin-top: -25px;
+}
+.fon_ton_2{
+  background-color: #ceaa642b;
+  height: 670px;
+}
+.proc{
+  margin-bottom: 40px !important;
+  padding-top: 40px !important;
+}
+
+.my_ind{
+  bottom: 50px !important;
+  margin-left: 14% !important;
+}
+.my_ind li{
+  margin: 0 10px !important;
 }
 
 /* block 6 */
@@ -309,17 +425,18 @@ body{
 }
 .div_col_prof h1{
   font-family: 'Houschka Pro', sans-serif;
+  font-size: 23px;
 }
 .div_col_prof p{
   font-family: 'Houschka Pro', sans-serif;
 }
 
 .line_img_bl6{
-  width: 40%;
+  width: 75%;
   background: linear-gradient(90deg, rgba(145,78,19,1) 35%, rgba(198,143,22,1) 100%);
   height: 5px;
   position: absolute;
-  right: 0px;
+  right: 10px;
 }
 .img_col_2{
   width: 200px; 
@@ -329,8 +446,21 @@ body{
 width: 90%;
 margin: 0 auto;
 }
+.line_6 {
+  width: 12%;
+  background-color: black;
+  height: 2px;
+  margin-top: 35px;
+}
+
 /* block 7 */
 
+.line_7 {
+  width: 12%;
+  background-color: black;
+  height: 2px;
+  margin-top: 35px;
+}
 .h1_7 {
 
     font-size: 18.6px;
@@ -338,15 +468,16 @@ margin: 0 auto;
     font-weight: 300;
     color: #282828;
     text-align: left;
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 150px;
+    width: 39%;
+    margin: 0 200px;
+    margin-top: 80px;
 }
 .line_bl7 {
-    width: 30%;
+    width: 50%;
     background-color: black;
     height: 2px;
-    margin-top: 20px;
+    margin-top: 35px;
+    margin-bottom: 50px;
 }
 .img_bl7 {
     height: 450px;
@@ -378,6 +509,9 @@ margin: 0 auto;
   width: 60%;
   margin: 0 auto;
 }
+.div_fot_h1 .row .col p{
+  margin-left: 15px;
+}
 .img_bl7_fot{
   width: 23px;
   height: 20px;
@@ -387,7 +521,7 @@ margin: 0 auto;
     width: 15%;
     background-color: black;
     height: 2px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 .fot_img{
   width: 15px;
@@ -397,10 +531,7 @@ margin: 0 auto;
 .fon_ton{
   background-color: #ceaa642b;
 }
-.fon_ton_2{
-  background-color: #ceaa642b;
-  height: 700px;
-}
+
 
 .drow{
   width: 80%;
@@ -432,10 +563,14 @@ margin: 0 auto;
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  width: 7em;
+  height: 7em;
 }
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  width: 7em;
+  height: 7em;
 }
 
 .carousel-indicators{
@@ -724,7 +859,7 @@ margin-right: 5px;
   width: 35%;
   background-color: black;
   height: 2px;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .fot_img{
 width: 15px;

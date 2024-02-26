@@ -20,8 +20,8 @@
 
 
     <!-- шрифты -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Houschka+Pro:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Houschka+Pro:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"> -->
 
 </head>
 
@@ -101,7 +101,7 @@
     <div class="d-flex div_1" >
         <div class="div_bl1 dnone">
             <h1 id="1" class="h1_1 mt-5">Design <br> interiors</h1>
-            <p class="p_1">Создание функционального, стильного интерьера для жилых и общественных помещений,<b> от идеи до воплощения.</b></p>
+            <p class="p_1">Создание функционального, стильного интерьера для жилых и общественных помещений,<b> </br> от идеи до воплощения.</b></p>
         </div>
         <div class="div_bl12 dnone2">
             <h1 id="1" class="h1_1 mt-5">Design <br> interiors</h1>
@@ -120,7 +120,7 @@
 
     <div class="block02">
 
-        <h1 class="h1_2 mt-5" id="2">наши<br> преимущества<p class="line"></p>
+        <h1 class="h1_2 mt-5" id="2">наши<br> преимущества<p class="line_2"></p>
         </h1>
         <div class="d-flex">
             <div class="div_img_bl2_p">
@@ -284,15 +284,14 @@
         </div>
         <!-- Стрелки для перемотки слайдов -->
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon span_none span_img_l" aria-hidden="true"></span>
             <span class="sr-only" style="color: black;"></span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon span_none span_img_r" aria-hidden="true"></span>
             <span class="sr-only" style="color: black;"></span>
         </a>
     </div>
-
 
 
 
@@ -340,6 +339,7 @@
         </a>
     </div>
 
+    
 
 
 
@@ -491,10 +491,9 @@
     <div class="backg dnone">
         <div class="fon_ton_2">
             
-            <h1 class="h1_2" id="4">процесс работы<p class="line"></p>
-            </h1>
+            <h1 class="h1_2 proc" id="4">процесс работы<p class=" lineporc"></p></h1>
             <!-- Карусель -->
-            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleControls2" class="carousel slide">
                 <div class="carousel-inner">
                     <!-- Первый слайд -->
                     <div class="carousel-item active">
@@ -504,11 +503,11 @@
                             </div>
                             <div class="div_text_bl5 ">
                                 <div class="text_bl5">
-                                    <h1>визуализация интерьера 1</h1>
+                                    <h1 class="h1_proc">визуализация интерьера 1</h1>
                                     <p class="line_intr"></p>
-                                    <p>– разрабатываем 3D модель на основании утвержденной планировки.</p>
-                                    <p>– сверяем визуализации с рабочими чертежами.</p>
-                                    <p>– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
+                                    <p class="p_proc">– разрабатываем 3D модель на основании утвержденной планировки.</p>
+                                    <p class="p_proc">– сверяем визуализации с рабочими чертежами.</p>
+                                    <p class="p_proc">– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
                                 </div>
                             </div>
                         </div>
@@ -521,40 +520,159 @@
                             </div>
                             <div class="div_text_bl5">
                                 <div class="text_bl5">
-                                    <h1>визуализация интерьера 2</h1>
+                                    <h1 class="h1_proc">визуализация интерьера 2</h1>
                                     <p class="line_intr"></p>
-                                    <p>– разрабатываем 3D модель на основании утвержденной планировки.</p>
-                                    <p>– сверяем визуализации с рабочими чертежами.</p>
-                                    <p>– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
+                                    <p class="p_proc">– разрабатываем 3D модель на основании утвержденной планировки.</p>
+                                    <p class="p_proc">– сверяем визуализации с рабочими чертежами.</p>
+                                    <p class="p_proc">– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Третий слайд -->
+                    <div class="carousel-item ">
+                        <div class="d-flex">
+                            <div>
+                                <img class="img_5" src="{{asset ('image/five.png')}}" alt="">
+                            </div>
+                            <div class="div_text_bl5 ">
+                                <div class="text_bl5">
+                                    <h1 class="h1_proc">визуализация интерьера 1</h1>
+                                    <p class="line_intr"></p>
+                                    <p class="p_proc">– разрабатываем 3D модель на основании утвержденной планировки.</p>
+                                    <p class="p_proc">– сверяем визуализации с рабочими чертежами.</p>
+                                    <p class="p_proc">– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Четвертый слайд -->
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <div>
+                                <img class="img_5" src="{{asset ('image/five.png')}}" alt="">
+                            </div>
+                            <div class="div_text_bl5">
+                                <div class="text_bl5">
+                                    <h1 class="h1_proc">визуализация интерьера 2</h1>
+                                    <p class="line_intr"></p>
+                                    <p class="p_proc">– разрабатываем 3D модель на основании утвержденной планировки.</p>
+                                    <p class="p_proc">– сверяем визуализации с рабочими чертежами.</p>
+                                    <p class="p_proc">– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Пятый слайд -->
+                    <div class="carousel-item ">
+                        <div class="d-flex">
+                            <div>
+                                <img class="img_5" src="{{asset ('image/five.png')}}" alt="">
+                            </div>
+                            <div class="div_text_bl5 ">
+                                <div class="text_bl5">
+                                    <h1 class="h1_proc">визуализация интерьера 1</h1>
+                                    <p class="line_intr"></p>
+                                    <p class="p_proc">– разрабатываем 3D модель на основании утвержденной планировки.</p>
+                                    <p class="p_proc">– сверяем визуализации с рабочими чертежами.</p>
+                                    <p class="p_proc">– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Шестой слайд -->
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <div>
+                                <img class="img_5" src="{{asset ('image/five.png')}}" alt="">
+                            </div>
+                            <div class="div_text_bl5">
+                                <div class="text_bl5">
+                                    <h1 class="h1_proc">визуализация интерьера 2</h1>
+                                    <p class="line_intr"></p>
+                                    <p class="p_proc">– разрабатываем 3D модель на основании утвержденной планировки.</p>
+                                    <p class="p_proc">– сверяем визуализации с рабочими чертежами.</p>
+                                    <p class="p_proc">– выдаем фотореалистичные изображения будущего интерьера для основных помещений.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Точки навигации -->
-                <ol class="carousel-indicators ">
-                    <li data-target="#carouselExampleControls2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleControls2" data-slide-to="1"></li>
-                </ol>
                 <!-- Стрелки для перемотки слайдов -->
                 <div class="div_cont">
                     <a class="carousel-control-prev bl5_con" href="#carouselExampleControls2" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon sr-only" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon sr-only span_none2 span_img_l2" aria-hidden="true"></span>
                     </a>
+                    <span class="slide-number"></span> <!-- Здесь будут вставлены цифры слайдов -->
                     <a class="carousel-control-next bl5_con" href="#carouselExampleControls2" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon sr-only" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon sr-only span_none2 span_img_r2" aria-hidden="true"></span>
                     </a>
                 </div>
+                <div>
+                    <!-- Точки навигации -->
+                    <ol class="carousel-indicators my_ind">
+                        <li data-target="#carouselExampleControls2" data-slide-to="0" class="ne active"></li>
+                        <li data-target="#carouselExampleControls2" data-slide-to="1" class="ne"></li>
+                        <li data-target="#carouselExampleControls2" data-slide-to="2" class="ne"></li>
+                        <li data-target="#carouselExampleControls2" data-slide-to="3" class="ne"></li>
+                        <li data-target="#carouselExampleControls2" data-slide-to="4" class="ne"></li>
+                        <li data-target="#carouselExampleControls2" data-slide-to="5" class="ne"></li>
+                    </ol>
+                </div>
+                
             </div>
         </div>
     </div>
     
     
     <script>
-        
+    document.addEventListener('DOMContentLoaded', function() {
+    var carousel = document.getElementById('carouselExampleControls2');
+    var prevButton = carousel.querySelector('.carousel-control-prev');
+    var nextButton = carousel.querySelector('.carousel-control-next');
+    var slideNumber = carousel.querySelector('.slide-number');
+    var totalSlides = carousel.querySelectorAll('.carousel-item').length;
+
+    // Функция для обновления цифры слайда
+    function updateSlideNumber() {
+        // Получаем индекс текущего активного слайда (начинается с 0)
+        var currentSlideIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
+        // Увеличиваем индекс на 1, чтобы получить номер слайда (начинается с 1)
+        currentSlideIndex += 1;
+        // Обновляем текст цифры слайда
+        slideNumber.textContent = currentSlideIndex;
+    }
+
+    // Обработчик события при переключении слайда вперёд
+    nextButton.addEventListener('click', function() {
+        updateSlideNumber();
+    });
+
+    // Обработчик события при переключении слайда назад
+    prevButton.addEventListener('click', function() {
+        updateSlideNumber();
+    });
+
+    // Обработчик события при автоматическом переключении слайдов
+    carousel.addEventListener('slid.bs.carousel', function() {
+        updateSlideNumber();
+    });
+
+    // Инициализация при загрузке страницы
+    updateSlideNumber();
+});
+
     </script>
     <style>
-
+        .slide-number{
+            font-size: 85px;
+            color: #6e5336;
+        }
+        .my_ind li:not(.active) {
+            width: 10px;
+            height: 10px;
+            align-self: center;
+        }
     </style>
     
     
@@ -625,10 +743,11 @@
 
     <!-- block 6 -->
 
-    <h1 class="h1_2" id="5">наша команда<p class="line"></p></h1>
+    <h1 class="h1_2" id="5">наша команда
+        <p class="line_6"></p></h1>
     
     
-    <div class="div_bl6 dnone">
+    <div class="mt-5 div_bl6 dnone">
         <div class="row">
             <div class="col div_col_prof">
                 <div class="img_bl6">
@@ -636,7 +755,7 @@
                     <p class="line_img_bl6"></p>
                 </div>
                 <h1 class="mt-3">Елена Солдатова</h1>
-                <p>Генеральный директор</p>
+                <p>Генеральный </br> директор</p>
             </div>
             <div class="col div_col_prof">
                 <div class="img_bl6">
@@ -644,7 +763,7 @@
                     <p class="line_img_bl6"></p>
                 </div>
                 <h1 class="mt-3">Инга Моисеева</h1>
-                <p>Руководитель студии</p>
+                <p>Руководитель </br> студии</p>
             </div>
             <div class="col div_col_prof">
                 <div class="img_bl6">
@@ -652,7 +771,7 @@
                     <p class="line_img_bl6"></p>
                 </div>
                 <h1 class="mt-3">Андрей Баранов</h1>
-                <p>Технический директор</p>
+                <p>Технический </br> директор</p>
             </div>
             <div class="col div_col_prof">
                 <div class="img_bl6">
@@ -667,8 +786,8 @@
                     <img class="img_col_2" src="{{asset ('image/prof4.png')}}" alt="">
                     <p class="line_img_bl6"></p>
                 </div>
-                <h1>Марианна Мискуева</h1>
-                <p>Главный офис-менеджер</p>
+                <h1 class="mt-3">Марианна Мискуева</h1>
+                <p>Главный </br> офис-менеджер</p>
             </div>
         </div>
     </div>
@@ -741,7 +860,7 @@
     <!-- block 7 -->
     
 
-    <h1 class="h1_2" id="6">контакты<p class="line"></p>
+    <h1 class="h1_2" id="6">контакты<p class="line_7"></p>
     </h1>
     <div class="backg backg2 ">
         <div class="fon_ton">
@@ -758,7 +877,7 @@
                     </h1>
 
                     <div class="container div_fot_h1 dnone">
-                        <div class="row">
+                        <div class="row ">
                             <div class="col d-flex">
                                 <img class="img_bl7_fot" src="{{asset ('image/home.png')}}" alt="">
                                 <p>Москва, Шаболовка 19</p>
@@ -768,7 +887,7 @@
                                 <p>telegram</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col d-flex">
                                 <img class="img_bl7_fot" src="{{asset ('image/call.png')}}" alt="">
                                 <p>+7 958 578-17-25</p>
@@ -778,7 +897,7 @@
                                 <p>vkontakte</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col d-flex">
                                 <img class="img_bl7_fot" src="{{asset ('image/mail.png')}}" alt="">
                                 <p>dogmainterior@mail.ru</p>
@@ -821,7 +940,7 @@
                 </div>
             </div>
             <div class="line_footer"></div>
-            <div class="foot d-flex">
+            <div class="foot d-flex mt-3">
                 <div>
                     <p class="f1">© 2023 Dogma design</p>
                 </div>

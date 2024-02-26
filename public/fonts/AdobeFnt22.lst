@@ -1,0 +1,274 @@
+%!Adobe-FontList 1.22
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:DINPro-Bold
+FamilyName:DINPro
+StyleName:Bold
+FullName:DINPro-Bold
+MenuName:DINPro-Bold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\DINPro-Bold Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:90228
+FileModTime:1304708680
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,DINPro-Bold
+NameArray:0,Win,1,DINPro-Bold
+NameArray:0,Win,16,DINPro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:DINPro-Light
+FamilyName:DINPro
+StyleName:Light
+FullName:DINPro-Light
+MenuName:DINPro-Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\DINPro-Light Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:88240
+FileModTime:1304708678
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,DINPro-Light
+NameArray:0,Win,1,DINPro-Light
+NameArray:0,Win,16,DINPro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:DINPro-Medium
+FamilyName:DINPro
+StyleName:Medium
+FullName:DINPro-Medium
+MenuName:DINPro-Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\DINPro-Medium Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:89060
+FileModTime:1304708672
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,DINPro-Medium
+NameArray:0,Win,1,DINPro-Medium
+NameArray:0,Win,16,DINPro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:DINPro-Regular
+FamilyName:DINPro
+StyleName:Regular
+FullName:DINPro-Regular
+MenuName:DINPro-Regular
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\DINPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:87364
+FileModTime:1304708650
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,DINPro-Regular
+NameArray:0,Win,1,DINPro-Regular
+NameArray:0,Win,16,DINPro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:HouschkaPro-Bold
+FamilyName:Houschka Pro
+StyleName:Bold
+FullName:Houschka Pro Bold
+MenuName:Houschka Pro Bold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\HouschkaPro-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:153852
+FileModTime:1556040150
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Houschka Pro Bold
+NameArray:0,Win,1,Houschka Pro Bold
+NameArray:0,Win,16,Houschka Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:HouschkaPro-ExtraBold
+FamilyName:Houschka Pro
+StyleName:ExtraBold
+FullName:Houschka Pro Extra Bold
+MenuName:Houschka Pro ExtraBold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\HouschkaPro-ExtraBold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:158432
+FileModTime:1556040157
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Houschka Pro Extra Bold
+NameArray:0,Win,1,Houschka Pro ExtraBold
+NameArray:0,Win,16,Houschka Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:HouschkaPro-Light
+FamilyName:Houschka Pro
+StyleName:Light
+FullName:Houschka Pro Light
+MenuName:Houschka Pro Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\HouschkaPro-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:148324
+FileModTime:1556040153
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Houschka Pro Light
+NameArray:0,Win,1,Houschka Pro Light
+NameArray:0,Win,16,Houschka Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:HouschkaPro-Medium
+FamilyName:Houschka Pro
+StyleName:Medium
+FullName:Houschka Pro Medium
+MenuName:Houschka Pro Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\HouschkaPro-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:148172
+FileModTime:1556040159
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Houschka Pro Medium
+NameArray:0,Win,1,Houschka Pro Medium
+NameArray:0,Win,16,Houschka Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Light
+FamilyName:Montserrat
+StyleName:Light
+FullName:Montserrat Light
+MenuName:Montserrat Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\Montserrat-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:259416
+FileModTime:1617698284
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Montserrat Light
+NameArray:0,Win,1,Montserrat Light
+NameArray:0,Win,16,Montserrat
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Medium
+FamilyName:Montserrat
+StyleName:Medium
+FullName:Montserrat Medium
+MenuName:Montserrat Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\Montserrat-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:260236
+FileModTime:1617698286
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Montserrat Medium
+NameArray:0,Win,1,Montserrat Medium
+NameArray:0,Win,16,Montserrat
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Regular
+FamilyName:Montserrat
+StyleName:Regular
+FullName:Montserrat Regular
+MenuName:Montserrat
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Dell\Desktop\Папка Безымянный-1\Document fonts\Montserrat-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:263192
+FileModTime:1617698284
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Montserrat Regular
+NameArray:0,Win,1,Montserrat
+%EndFont
+
