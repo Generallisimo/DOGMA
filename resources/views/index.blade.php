@@ -113,6 +113,58 @@
         <div class="carousel-item active div_bl1_img">
             <img src="{{asset('image/one.png')}}" class="d-block w-100 img_bl1" alt="...">
         </div>
+        <!-- numbers 1 -->
+        <div class="numb_bl1">
+            <div class="d-flex">
+                <img src="{{ asset('image/line.png') }}" class="img_num">
+                <p class="num_bl_n">01</p>
+                <p class="num_name">ПОРТФОЛИО</p>
+            </div>
+            <p class="num_bl">02</p>
+            <p class="num_bl">03</p>
+            <p class="num_bl">04</p>
+        </div>
+        <!-- numbers 2 -->
+        <div class="numb_bl2">
+            <p class="num_bl">01</p>
+            <div class="d-flex">
+                <img src="{{ asset('image/line.png') }}" class="img_num">
+                <p class="num_bl_n">02</p>
+            </div>
+            <p class="num_bl">03</p>
+            <p class="num_bl">04</p>
+        </div>
+        <!-- numbers 3 -->
+        <div class="numb_bl3">
+            <p class="num_bl">01</p>
+            <p class="num_bl">02</p>
+            <div class="d-flex">
+                <img src="{{ asset('image/line.png') }}" class="img_num">
+                <p class="num_bl_n">03</p>
+            </div>
+            <p class="num_bl">04</p>
+        </div>
+        <!-- numbers 4 -->
+        <div class="numb_bl4">
+            <p class="num_bl">01</p>
+            <p class="num_bl">02</p>
+            <p class="num_bl">03</p>
+            <div class="d-flex">
+                <img src="{{ asset('image/line.png') }}" class="img_num">
+                <p class="num_bl_n">04</p>
+            </div>
+        </div>
+        <!-- numbers 5 -->
+        <div class="numb_bl5">
+            <p class="num_bl">01</p>
+            <p class="num_bl">02</p>
+            <p class="num_bl">03</p>
+            <p class="num_bl">04</p>
+            <div class="d-flex">
+                <img src="{{ asset('image/line.png') }}" class="img_num">
+                <p class="num_bl_n">05</p>
+            </div>
+        </div>
     </div>
 
 
@@ -945,9 +997,9 @@
                     <p class="f1">© 2023 Dogma design</p>
                 </div>
                 <div>
-                    <img class="fot_img" src="{{asset ('image/wp.png')}}" alt="">
+                    <img class="fot_img op" src="{{asset ('image/wp.png')}}" alt="">
                     <img class="fot_img" src="{{asset ('image/inst.png')}}" alt="">
-                    <img class="fot_img" src="{{asset ('image/telegram.png')}}" alt="">
+                    <img class="fot_img op" src="{{asset ('image/telegram.png')}}" alt="">
                     <img class="fot_img" src="{{asset ('image/fb.png')}}" alt="">
                 </div>
             </div>

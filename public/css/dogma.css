@@ -171,7 +171,52 @@ body{
     width: 40%;
     margin: 0 110px;
 }
+/* num 1 */
+.numb_bl1{
+  margin-top: 430px;
+  position: absolute;
+  z-index: 4;
+  
+}
+.img_num{
+  width: 27px;
+  height: 2px;
+  margin-top: 10px;
+}
+.num_bl_n{
+  margin-left: 15px;
+}
+.num_bl{
+  margin-left: 42px;
+}
+.num_name{
+  margin-left: 10px;
+}
 
+/* num2 */
+.numb_bl2{
+  margin-top: 1300px;
+  position: absolute;
+  z-index: 4; 
+}
+/* num3 */
+.numb_bl3{
+  margin-top: 2350px;
+  position: absolute;
+  z-index: 4; 
+}
+/* num4 */
+.numb_bl4{
+  margin-top: 3380px;
+  position: absolute;
+  z-index: 4; 
+}
+/* num5 */
+.numb_bl5{
+  margin-top: 4200px;
+  position: absolute;
+  z-index: 4; 
+}
 
 /* block 2 */
 
@@ -527,6 +572,9 @@ margin: 0 auto;
   width: 15px;
   height: 15px;
   margin-right: 5px;
+}
+.op{
+  opacity: 0.64;
 }
 .fon_ton{
   background-color: #ceaa642b;
